@@ -1,0 +1,6 @@
+# Packages
+bin
+lib
+*.py[co]
+*.cfg
+pip-selfcheck.json
