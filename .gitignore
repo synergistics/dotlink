@@ -1,6 +1,6 @@
 # Packages
 bin
-lib
+./lib
 *.py[co]
 *.cfg
 pip-selfcheck.json
