@@ -1,5 +1,4 @@
-# Packages
-bin
+./bin
 ./lib
 *.py[co]
 *.cfg
