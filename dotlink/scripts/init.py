@@ -12,4 +12,4 @@ def init(command_relevants):
         json.dump({}, f)
     
     with open(dotlinkrc, "w") as f:
-        f.write("dotlinkdir: " + path)
+        f.write("dotlinkdir = " + path)
