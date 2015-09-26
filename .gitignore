@@ -1,6 +1,6 @@
-./bin/*
-./lib/*
-./include/*
+bin/*
+lib/*
+include/*
 *.py[co]
 *.cfg
 pip-selfcheck.json
