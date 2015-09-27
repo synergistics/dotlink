@@ -1,5 +1,5 @@
 from scripts.init import init
-# from scripts.link import link
+from scripts.link import link
 # from scripts.rmlink import rmlink
 # from scripts.migrate import migrate
 
@@ -11,7 +11,7 @@ relevance_dict = {
 
     "link": {
         "relevants_model": ("-s", "<target>", "<link_name>"),
-        "func": None
+        "func": link
     },
 
     "rmlink": {
