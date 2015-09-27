@@ -7,15 +7,16 @@ Usage:
     dotlink init [<path>]
     dotlink link [-s] <target> <link_name>
     dotlink rmlink <link_name>
+    dotlink show 
     dotlink migrate <target> <link_name> 
 
 Arguments: 
-    path         path to dotfile directory
-    target       the file you want to link from
-    link_name    the file and path you want to link to
+    path: path to dotfile directory
+    target: the file you want to link from
+    link_name: the file and path you want to link to
 
 Options:
-    -s      symbolic
+    -s: make link symbolic
 
 """
 
