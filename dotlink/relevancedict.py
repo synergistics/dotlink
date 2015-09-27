@@ -15,7 +15,8 @@ relevance_dict = {
     },
 
     "rmlink": {
-        "relevants_model": rmlink
+        "relevants_model": ("<link_name>"),
+        "func": rmlink
     }
 }
 

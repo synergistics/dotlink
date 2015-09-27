@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 from lib.dotlinkgetters import get_dotlink_dir
 from lib.pathmodifiers import to_generic_home_path, to_specific_path
@@ -23,12 +24,14 @@ def link(command_relevants):
     if symbolic:
         try:
             os.symlink(os.path.expandvars(target_path), link_name)
-        except Exception as e:
+        except OSError as e:
             print("dotlink: " , e)
+            sys.exit() 
     else:
         try:
             os.link(os.path.expandvars(target_path), link_name)
-        except Exception as e:
+        except OSError as e:
             print("dotlink: ", e)
+            sys.exit() 
 
     
