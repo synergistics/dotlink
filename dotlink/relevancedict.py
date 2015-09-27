@@ -1,6 +1,6 @@
 from scripts.init import init
 from scripts.link import link
-# from scripts.rmlink import rmlink
+from scripts.rmlink import rmlink
 # from scripts.migrate import migrate
 
 relevance_dict = {
@@ -15,7 +15,7 @@ relevance_dict = {
     },
 
     "rmlink": {
-        "relevants_model": None
+        "relevants_model": rmlink
     }
 }
 

@@ -1,9 +1,10 @@
 import os
 import re
 import sys
+from lib.pathmodifiers import to_specific_path
 
 def get_dotlinkrc():
-    return os.path.join(os.path.expandvars("$HOME"), ".dotlinkrc")
+    return os.path.join(os.environ.get("HOME"), ".dotlinkrc")
 
 def get_dotlink_dir():
     dotlinkrc = get_dotlinkrc()
@@ -17,5 +18,5 @@ def get_dotlink_dir():
 
         for line in f:
             if r.match(line):
-               dotlink_dir = os.path.abspath(os.path.expandvars(r.match(line).group("dir")))
+               dotlink_dir = to_specific_path(r.match(line).group("dir"))
     return dotlink_dir
