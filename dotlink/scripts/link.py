@@ -16,7 +16,7 @@ def link(command_relevants):
     with open(os.path.join(dotlink_dir, "dotlinks.json"), "r") as f:
         dotlinks = json.load(f) 
 
-    dotlinks[to_generic_home_path(target_path)] = {
+    dotlinks[os.path.relpath(target_path, start=dotlink_dir)] = {
             "path": to_generic_home_path(link_name), 
             "symbolic": symbolic
         }
