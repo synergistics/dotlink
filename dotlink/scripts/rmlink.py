@@ -4,7 +4,7 @@ import json
 from lib.dotlinkgetters import get_dotlink_dir
 from lib.pathmodifiers import to_generic_home_path, to_specific_path
 
-def rmlink(command_relevants):
+def rmlink(command_relevants, know_in_dotlinks=False):
     link_name = to_specific_path(command_relevants["<link_name>"])
 
     dotlink_dir = get_dotlink_dir()
@@ -13,7 +13,7 @@ def rmlink(command_relevants):
         dotlinks = json.load(f)
         new_dotlinks = dotlinks.copy()
 
-    if to_generic_home_path(link_name) in map(lambda x: x["path"], dotlinks.values()):
+    if know_in_dotlinks or to_generic_home_path(link_name) in map(lambda x: x["path"], dotlinks.values()):
         if os.path.exists(link_name):
             os.remove(link_name)
         else:

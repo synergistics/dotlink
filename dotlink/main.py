@@ -6,9 +6,9 @@ dotlink.
 Usage:  
     dotlink init [<path>]
     dotlink link [-s] <target> <link_name>
+    dotlink migrate [-s] <src> [<dest>] 
     dotlink rmlink <link_name>
     dotlink show 
-    dotlink migrate <target> <link_name> 
 
 Arguments: 
     path: path to dotfile directory
