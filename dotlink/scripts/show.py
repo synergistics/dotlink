@@ -1,6 +1,5 @@
 import os
 import json
-from pprint import pprint
 from lib.dotlinkgetters import get_dotlink_dir
 
 def show(command_relevants):
@@ -8,4 +7,8 @@ def show(command_relevants):
     
     with open(os.path.join(dotlink_dir, "dotlinks.json"), "r") as f:
         dotlinks = json.load(f) 
-    pprint(dotlinks)
+    for x in list(dotlinks.items()):
+        print("target:", x[0])
+        print("link_name:", x[1]["path"])
+        print("symbolic:", x[1]["symbolic"])
+        print("\n")
