@@ -1,10 +1,10 @@
 # dotlink.
 
 # Usage:  
-    dotlink init [<path>]
-    dotlink link [-s] <target> <link_name>
-    dotlink migrate [-s] <src> [<dest>] 
-    dotlink rmlink <link_name>
+    dotlink init [\<path\>]
+    dotlink link [-s] \<target\> <link_name>
+    dotlink migrate [-s] \<src\> [<dest>] 
+    dotlink rmlink \<link_name\>
     dotlink show 
     dotlink sync
 
@@ -21,7 +21,7 @@ file in path or the current directory that keeps track of the files linked
 using dotlink.
 
 ### Arguments
-* [<path>]: The location of the dotlink directory.
+* [\<path\>]: The location of the dotlink directory.
 Omission: dotlink will initialize in current directory.
 
 ## link
@@ -33,10 +33,10 @@ now, do not rename this file.
 
 ### Arguments
 * [-s]: Makes and records link as symbolic.
-* <target>: The path of the file in the dotlink directory from which the link is made.
+* \<target\>: The path of the file in the dotlink directory from which the link is made.
 This path is assumed to be in the dotlink directory, so it should be written relative to 
 its location.
-* <link_name>: The path of the file to which the link is made on the user's system.
+* \<link_name\>: The path of the file to which the link is made on the user's system.
 
 ## migrate
 
@@ -48,8 +48,8 @@ and then links this file back to src.
 ### Arguments
 * [-s]: Effectively the same as running link -s after moving the file, i.e. the link back 
 to the old location is symbolic and is recorded accordingly.
-* <src>: The location of the original file to be migrated
-* [<dest>]: The location of the now moved file in the dotlink directory
+* \<src\>: The location of the original file to be migrated
+* [\<dest\>]: The location of the now moved file in the dotlink directory
 Omission: See Description
 
 ## rmlink
@@ -61,7 +61,7 @@ in the dotlink directory. To remove the file in the dotlink directory, just do s
 normally delete a file. 
 
 ### Arguments
-* <link_name>: The link to be removed
+* \<link_name\>: The link to be removed
 
 ## show
 
