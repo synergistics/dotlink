@@ -1,6 +1,6 @@
 # dotlink.
 
-# Usage:  
+## Usage
     dotlink init [\<path\>]
     dotlink link [-s] \<target\> <link_name>
     dotlink migrate [-s] \<src\> [<dest>] 
@@ -22,6 +22,8 @@ using dotlink.
 
 ### Arguments
 * [\<path\>]: The location of the dotlink directory.
+
+
 Omission: dotlink will initialize in current directory.
 
 ## link
@@ -50,6 +52,7 @@ and then links this file back to src.
 to the old location is symbolic and is recorded accordingly.
 * \<src\>: The location of the original file to be migrated
 * [\<dest\>]: The location of the now moved file in the dotlink directory
+
 Omission: See Description
 
 ## rmlink
