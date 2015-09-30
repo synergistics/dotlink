@@ -3,6 +3,8 @@ from scripts.link import link
 from scripts.rmlink import rmlink
 from scripts.show import show 
 from scripts.migrate import migrate
+from scripts.mv import mv
+from scripts.sync import sync
 
 relevance_dict = {
     "init": {
@@ -27,5 +29,13 @@ relevance_dict = {
     "migrate": {
         "relevants_model": ("-s", "<src>", "<dest>"),
         "func": migrate 
+        },
+    "mv": {
+        "relevants_model": (),
+        "func": mv 
+        },
+    "sync": {
+        "relevants_model": (),
+        "func": sync 
         }
     }

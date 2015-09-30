@@ -28,6 +28,5 @@ def migrate(command_relevants):
         shutil.move(src, dest)
         link(options)
     else:
-        print("dotlink: " + src + ": No such file or directory" 
-              "\nCannot migrate ", src, "to", os.path.join(dotlink_dir, "dotlinks.json"))
+        print("dotlink: " + src + ": No such file or directory")
         sys.exit()
