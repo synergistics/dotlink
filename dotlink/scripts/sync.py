@@ -13,7 +13,10 @@ def sync(command_relevants):
     for k in dotlinks:
         options = {
                 "<target>": k,
-                "<link_name>": dotlinks[k]["path"],
+                "<link_name>": dotlinks[k]["link_name"],
                 "-s": dotlinks[k]["symbolic"]
             }
-        link(options)
+        try:
+            link(options)
+        except Exception as e:
+            print("dotlink:", e)
