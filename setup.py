@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="dotlink",
-    version="1.0",
+    version="0.0",
     description="A lightweight dotfile manager",
     author="Jabari King",
     author_email="kingjak678@gmail.com",
