@@ -9,33 +9,33 @@ from scripts.sync import sync
 relevance_dict = {
     "init": {
         "relevants_model": ("<path>"),
-        "func": init
+        "func": init,
         },
 
     "link": {
         "relevants_model": ("-s", "<target>", "<link_name>"),
-        "func": link
+        "func": link,
         },
 
     "rmlink": {
         "relevants_model": ("<link_name>"),
-        "func": rmlink
+        "func": rmlink,
         },
 
     "show": {
         "relevants_model": (),
-        "func": show
+        "func": show,
         },
     "migrate": {
         "relevants_model": ("-s", "<src>", "<dest>"),
-        "func": migrate 
+        "func": migrate,
         },
     "mv": {
         "relevants_model": (),
-        "func": mv 
+        "func": mv,
         },
     "sync": {
         "relevants_model": (),
-        "func": sync 
-        }
+        "func": sync,
+        },
     }
