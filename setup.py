@@ -7,8 +7,8 @@ setup(
     author="Jabari King",
     author_email="kingjak678@gmail.com",
     url="https://github.com/synergistics/dotlink",
-    # package_dir={"": "dotlink"},
-    # packages=["scripts", "lib"],
+    packages=find_packages(),
+    py_modules=["dotlink.relevancedict"],
     install_requires=[
         'docopt',
         ],

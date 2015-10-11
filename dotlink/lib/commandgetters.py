@@ -1,6 +1,5 @@
 import re
-from relevancedict import relevance_dict
-
+from dotlink.relevancedict import relevance_dict
 
 def get_command(parsed_args):
     get_command_tuple = lambda x: re.match(r"^[a-zA-Z]", x[0]) and x[1] is True

@@ -89,8 +89,8 @@ dotlink sync will recreate the link structure on the previous system.
 """
 
 import docopt
-from relevancedict import relevance_dict
-from lib.commandgetters import get_command, get_command_relevants
+from dotlink.relevancedict import relevance_dict
+from dotlink.lib.commandgetters import get_command, get_command_relevants
 
 def main():
     arguments = docopt.docopt(__doc__)

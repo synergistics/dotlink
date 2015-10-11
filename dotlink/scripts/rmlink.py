@@ -17,8 +17,8 @@ Removes a link already existing in dotlinks.json
 import os
 import sys
 import json
-from lib.dotlinkgetters import get_dotlink_dir
-from lib.pathmodifiers import to_generic_home_path, to_specific_path
+from dotlink.lib.dotlinkgetters import get_dotlink_dir
+from dotlink.lib.pathmodifiers import to_generic_home_path, to_specific_path
 
 def rmlink(command_relevants):
     link_name = to_specific_path(command_relevants["<link_name>"])

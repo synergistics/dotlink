@@ -1,10 +1,10 @@
-from scripts.init import init
-from scripts.link import link
-from scripts.rmlink import rmlink
-from scripts.show import show 
-from scripts.migrate import migrate
-from scripts.mv import mv
-from scripts.sync import sync
+from dotlink.scripts.init import init
+from dotlink.scripts.link import link
+from dotlink.scripts.rmlink import rmlink
+from dotlink.scripts.show import show 
+from dotlink.scripts.migrate import migrate
+from dotlink.scripts.mv import mv
+from dotlink.scripts.sync import sync
 
 relevance_dict = {
     "init": {

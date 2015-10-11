@@ -1,7 +1,7 @@
 import os
 import re
 import sys
-from lib.pathmodifiers import to_specific_path
+from dotlink.lib.pathmodifiers import to_specific_path
 
 def get_dotlinkrc():
     return os.path.join(os.environ.get("HOME"), ".dotlinkrc")

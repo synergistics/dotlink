@@ -20,9 +20,9 @@ import os
 import sys
 import json
 import shutil
-from .link import link
-from lib.dotlinkgetters import get_dotlink_dir
-from lib.pathmodifiers import to_generic_home_path, to_specific_path
+from dotlink.scripts.link import link
+from dotlink.lib.dotlinkgetters import get_dotlink_dir
+from dotlink.lib.pathmodifiers import to_generic_home_path, to_specific_path
 
 def migrate(command_relevants):
     dotlink_dir = get_dotlink_dir()

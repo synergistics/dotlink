@@ -20,8 +20,8 @@ back to dotlinks.json if successful
 import os
 import sys
 import json
-from lib.dotlinkgetters import get_dotlink_dir
-from lib.pathmodifiers import to_generic_home_path, to_specific_path
+from dotlink.lib.dotlinkgetters import get_dotlink_dir
+from dotlink.lib.pathmodifiers import to_generic_home_path, to_specific_path
 
 def link(command_relevants):
     target = command_relevants["<target>"]

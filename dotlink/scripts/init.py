@@ -15,7 +15,7 @@ just created
 """
 import os
 import json
-from lib.pathmodifiers import to_generic_home_path, to_specific_path
+from dotlink.lib.pathmodifiers import to_generic_home_path, to_specific_path
 
 def init(command_relevants):
     path = to_specific_path(command_relevants["<path>"] or ".")
