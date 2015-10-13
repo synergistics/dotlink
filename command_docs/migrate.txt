@@ -4,24 +4,30 @@ Description:
     Move a file not managed with dotlink to the dotlink 
 
     Steps: 
-        - Move the src file to dest or [dotlink_dir]/[name_of_src] 
-        - Run dotlink link with dest or [dotlink_dir]/[name_of_src] as target
-          and src as link_name, or more simply, move src to dotlink directory
+        - Move the src file to dest or [dotlink_dir]/[basename_of_src] 
+        - Run dotlink link with dest or [dotlink_dir]/[basename_of_src] as target
+          and src as link_name. More simply, move src to dotlink directory
           and link back to prior location
 Usage:
     dotlink migrate [-s] <src> [<dest>] 
 
 Options:
-
+    [-s] : Supply -s option to dotlink link. Makes link symbolic and is 
+	       recorded accordingly
 
 Arguments: 
-    [path] : The path at which the new dotlink directory will be created. Defaults to
-             `.` (the current directory)
+    src : The path of the file that will be moved to the dotlink directory
+    [dest] : The path of the moved file relative to the dotlink directory.
+	         Defaults to the basename of src
+	
 Examples:
-    dotlink init ./my_dotfiles
-    - Running this command creates a new dotlink directory at the location 
-      ./my_dotfiles 
+    dotlink migrate ~/.vimrc
+    - Running this command would move your .vimrc to the dotlink directory 
+      under the name .vimrc
+    - When re-linked, the link from [dotlink_dir]/.vimrc to ~/.vimrc is hard
 
-    dotlink init 
-    - Makes current directory into dotlink directory
-
+    dotlink migrate -s ../happy.conf sad.conf
+    - This command will move ../happy.conf to [dotlink_dir]/sad.conf
+    - After moving, a link will be made back to ../happy.conf from 
+      [dotlink_dir]/sad.conf
+    - The link will be symbolic
