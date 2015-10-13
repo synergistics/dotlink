@@ -1,0 +1,22 @@
+dotlink sync.
+
+Description:
+    Synchronize the filesystem with links specified in dotlinks.json
+    
+    Steps:
+        - For each link in dotlinks.json, run dotlink link with the data provided in
+          the record for the link from it's conception
+
+Usage:
+    dotlink sync
+    
+Example scenario:
+    - Running dotlink sync is useful when moving from computer to computer and 
+      maintaining your configuration. Configure once, sync anywhere
+
+To carry dotlink directory and remake configuration on another computer:
+    1. Make sure your dotlink directory is initialized as a git repository
+    2. On different computer, run git clone on the repo
+    3. Create ~/.dotlinkrc if it does not exist and write to it 
+       `DOTLINK_DIR = [path]`
+       replacing [path] with the path of the dotlink directory after git clone 
