@@ -1,0 +1,22 @@
+dotlink init.
+
+Description:
+    Initialize a dotlink directory
+
+    Steps: 
+    - Make a directory
+    - Touch dotlinks.json in the new directory
+
+Usage:
+    dotlink init [<path>]
+
+Arguments: 
+    [path] : The path at which the new dotlink directory will be created. Defaults to
+             `.` (the current directory)
+Examples:
+    dotlink init ./my_dotfiles
+    - Running this command creates a new dotlink directory at the location 
+      ./my_dotfiles 
+
+    dotlink init 
+    - Creates a dotlink directory in the current directory

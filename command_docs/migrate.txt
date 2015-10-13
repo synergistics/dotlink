@@ -1,0 +1,27 @@
+dotlink migrate.
+
+Description:
+    Move a file not managed with dotlink to the dotlink 
+
+    Steps: 
+        - Move the src file to dest or [dotlink_dir]/[name_of_src] 
+        - Run dotlink link with dest or [dotlink_dir]/[name_of_src] as target
+          and src as link_name, or more simply, move src to dotlink directory
+          and link back to prior location
+Usage:
+    dotlink migrate [-s] <src> [<dest>] 
+
+Options:
+
+
+Arguments: 
+    [path] : The path at which the new dotlink directory will be created. Defaults to
+             `.` (the current directory)
+Examples:
+    dotlink init ./my_dotfiles
+    - Running this command creates a new dotlink directory at the location 
+      ./my_dotfiles 
+
+    dotlink init 
+    - Makes current directory into dotlink directory
+

@@ -1,0 +1,30 @@
+dotlink link.
+
+Description:
+    Link a file in the dotlink directory to a location on the filesystem
+    Record new link in dotlinks.json in user's dotlink directory
+
+Usage:
+    dotlink link [-s] <target> <link_name>
+
+Options:
+    [-s] : Makes link symbolic and is recorded accordingly
+
+Arguments: 
+    target : The name of the file in the dotlink directory. Currently, this path
+             must be relative to [dotlink_dir]/
+    link_name : The path of the new link from <target>
+
+Examples:
+    dotlink link .vimrc ~/.vimrc
+    - This will create a hard link from the file [dotlink_dir]/.vimrc to 
+      ~/.vimrc and record the link in [dotlink_dir]/dotlinks.json 
+
+    dotlink link my_zshrc ~/.zshrc
+    - This is to show that the name of the file in the dotlink directory does
+      not need to follow any naming convention at all, nor does it need to have
+      the same basename as the desired link
+
+    dotlink link -s some_crazy_nested_conf ~/conf_mess/conf_mess_conf/conf_conf.conf
+    - This one creates a symbolic link
+    - Links can be made to arbitrarily nested paths
