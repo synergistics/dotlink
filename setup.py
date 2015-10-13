@@ -8,9 +8,10 @@ setup(
     author_email="kingjak678@gmail.com",
     url="https://github.com/synergistics/dotlink",
     packages=find_packages(),
+    package_data={"dotlink": ["commands_docs/*.txt"]},
     py_modules=["dotlink.relevancedict"],
     install_requires=[
-        'docopt',
+        "docopt",
         ],
     entry_points={
         "console_scripts": [

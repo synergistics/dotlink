@@ -1,0 +1,1 @@
+recursive-include dotlink/command_docs *.txt

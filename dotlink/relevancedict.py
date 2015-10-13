@@ -3,7 +3,6 @@ from dotlink.scripts.link import link
 from dotlink.scripts.rmlink import rmlink
 from dotlink.scripts.show import show 
 from dotlink.scripts.migrate import migrate
-from dotlink.scripts.mv import mv
 from dotlink.scripts.sync import sync
 
 relevance_dict = {
@@ -29,11 +28,6 @@ relevance_dict = {
     "migrate": {
         "relevants_model": ("-s", "<src>", "<dest>", "--help"),
         "func": migrate,
-        },
-
-    "mv": {
-        "relevants_model": ("--help"),
-        "func": mv,
         },
 
     "sync": {
