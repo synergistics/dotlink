@@ -17,6 +17,6 @@ Example scenario:
 To carry dotlink directory and remake configuration on another computer:
     1. Make sure your dotlink directory is initialized as a git repository
     2. On different computer, run git clone on the repo
-    3. Create ~/.dotlinkrc if it does not exist and write to it 
-       `DOTLINK_DIR = [path]`
-       replacing [path] with the path of the dotlink directory after git clone 
+    3. cd into the cloned repo
+    4. Run dotlink init; dotlink sync
+    
