@@ -8,34 +8,36 @@ from dotlink.scripts.sync import sync
 
 relevance_dict = {
     "init": {
-        "relevants_model": ("<path>"),
+        "relevants_model": ("<path>", "--help"),
         "func": init,
         },
 
     "link": {
-        "relevants_model": ("-s", "<target>", "<link_name>"),
+        "relevants_model": ("-s", "<target>", "<link_name>", "--help"),
         "func": link,
         },
 
     "rmlink": {
-        "relevants_model": ("<link_name>"),
+        "relevants_model": ("<link_name>", "--help"),
         "func": rmlink,
         },
 
     "show": {
-        "relevants_model": (),
+        "relevants_model": ("--help"),
         "func": show,
         },
     "migrate": {
-        "relevants_model": ("-s", "<src>", "<dest>"),
+        "relevants_model": ("-s", "<src>", "<dest>", "--help"),
         "func": migrate,
         },
+
     "mv": {
-        "relevants_model": (),
+        "relevants_model": ("--help"),
         "func": mv,
         },
+
     "sync": {
-        "relevants_model": (),
+        "relevants_model": ("--help"),
         "func": sync,
         },
     }
