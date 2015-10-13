@@ -1,0 +1,17 @@
+dotlink rmlink.
+
+Description:
+    Remove the link of a file in the dotlink directory
+
+    Steps: 
+        - Remove the link from the filesystem
+        - Remove the link entry in dotlinks.json
+Usage:
+    dotlink rmlink <link_name> 
+
+Arguments: 
+    link_name : The path of the link on the filesystem
+    
+Examples:
+    dotlink rmlink ~/.vimrc
+    - Running this command removes the link to ~/.vimrc but not the actual file [dotlink_dir]/.vimrc
