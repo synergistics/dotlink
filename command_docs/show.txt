@@ -1,0 +1,7 @@
+dotlink show.
+
+Description:
+    List the current dotlinks on the filesystem recorded in dotlinks.json
+
+Usage:
+    dotlink show
