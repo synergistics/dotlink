@@ -11,7 +11,7 @@ Options:
     [-s] : Makes link symbolic and is recorded accordingly
 
 Arguments: 
-    target : The name of the file in the dotlink directory. Currently, this path
+    target : The name of the file in the dotlink directory. This path
              must be relative to [dotlink_dir]/
     link_name : The path of the new link from <target>
 
