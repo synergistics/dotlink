@@ -4,3 +4,4 @@ include/*
 *.py[co]
 *.cfg
 pip-selfcheck.json
+dist
