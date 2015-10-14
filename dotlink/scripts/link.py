@@ -40,8 +40,12 @@ def link(command_relevants):
             "symbolic": symbolic
         }
 
-
     if symbolic:
+        if not os.path.exists(target_path):
+            print("dotlink:", target_path, ": No such file or directory")
+            print("dotlink: Cannot symlink to a file that does not exist")
+            sys.exit()
+
         try:
             os.symlink(os.path.expandvars(target_path), link_name)
         except OSError as e:
