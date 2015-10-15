@@ -1,19 +1,3 @@
-"""
-# Developer Documentation: 'rmlink' command
-Note: This is NOT user documentation
-
-# Description
-Removes a link already existing in dotlinks.json
-
-# Walkthrough steps
-1. Get name of link to be removed as link_name 
-2. Make synthetic options dict to be used as the command_relevants for the link command 
-3. Load dotlinks and make a copy to which the deletion will be made 
-4. Remove the link on the filesystem if possible
-5. Remove the link entry in the dotlinks copy 
-6. Overwrite dotlinks.json with the modified dotlinks copy
-
-"""
 import os
 import sys
 import json
