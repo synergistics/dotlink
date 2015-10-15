@@ -1,21 +1,3 @@
-"""
-# Developer Documentation: 'migrate' command
-Note: This is NOT user documentation
-
-# Description
-Moves a file not currently known by dotlink to the dotlink directory and creates a
-link/symlink to the original file's path
-
-# Walkthrough steps
-1. Get source and destination paths 
-2. Make synthetic options dict to be used as the command_relevants for the link command 
-3. Load dotlinks 
-4. Check if the link about to be made already exists
-5. Move the file in the user's filesystem to the dotlink directory
-6. Run link command with the new file in the dotlink directory as the target and the
-source file as the link_name as specified in the options dict
-
-"""
 import os
 import sys
 import json
