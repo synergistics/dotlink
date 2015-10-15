@@ -22,10 +22,14 @@ def init(command_relevants):
     json_path = os.path.join(path, "dotlinks.json")
     dotlinkrc = os.path.join(os.environ["HOME"], ".dotlinkrc")
 
+    # If directory exists, nothing happens to it
     os.makedirs(path, exist_ok=True)
 
-    with open(json_path, "w") as f:
-        json.dump({}, f)
+    # Don't want to overwrite file if it already has links
+    if not os.path.exists(json_path):
+        with open(json_path, "w") as f:
+            json.dump({}, f)
     
+    # Will have to change once more can be added to dotlinkrc
     with open(dotlinkrc, "w") as f:
         f.write("dotlink_dir = " + to_generic_home_path(path))
