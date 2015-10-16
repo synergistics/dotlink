@@ -21,28 +21,18 @@
     the original computer can be recreated on the new.
 
 ### Usage 
-    dotlink init [<path>] dotlink link [-s] <target> <link_name> 
-
-    dotlink rmlink <link_name> dotlink migrate [-s] <src> [<dest>] 
-
-    dotlink show 
-
-    dotlink sync
-
-    dotlink <command> --help
+    dotlink init [<path>] dotlink link [-s] <target> <link_name>   
+    dotlink rmlink <link_name> dotlink migrate [-s] <src> [<dest>]   
+    dotlink show   
+    dotlink sync  
+    dotlink <command> --help  
 
 ### Commands 
-  init : Initialize a dotlink directory 
-
-  link : Link a file in the dotlink directory to a location on the filesystem 
-
-  rmlink : Remove the link of a file in the dotlink directory 
-
-  migrate : Move a file not managed with dotlink to
-the dotlink directory
-
-  show : List the current dotlinks on the filesystem 
-
-  sync : Synchronize the filesystem with links specified in dotlinks.json 
+  init : Initialize a dotlink directory   
+  link : Link a file in the dotlink directory to a location on the filesystem   
+  rmlink : Remove the link of a file in the dotlink directory   
+  migrate : Move a file not managed with dotlink to the dotlink directory  
+  show : List the current dotlinks on the filesystem   
+  sync : Synchronize the filesystem with links specified in dotlinks.json   
 
  
