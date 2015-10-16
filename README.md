@@ -1,6 +1,6 @@
-dotlink.
+## dotlink.
 
-Description: 
+### Description: 
   dotlink is a lightweight dotfile manager based on hard and symbolic
   links. dotlink allows one to keep all configuration files in one location to
   which links are made to other locations in the file system. There are three
@@ -20,14 +20,14 @@ Description:
     can be cloned to another computer using dotlink and the same links made on
     the original computer can be recreated on the new.
 
-Usage: 
+### Usage: 
   dotlink init [<path>] dotlink link [-s] <target> <link_name> 
   dotlink rmlink <link_name> dotlink migrate [-s] <src> [<dest>] 
   dotlink show 
   dotlink sync
   dotlink <command> --help
 
-Commands: 
+### Commands: 
   init : Initialize a dotlink directory 
   link : Link a file in the dotlink directory to a location on the filesystem 
   rmlink : Remove the link of a file in the dotlink directory 
