@@ -26,20 +26,18 @@
   Currently, dotlink needs to be downloaded via git. It will later be available
   on the PyPI, though name conflicts currently exist.
 
-  To install, first run from your terminal
+  To install, first run from your terminal  
     git clone https://github.com/synergistics/dotlink
-
   to download the source.  
 
-  Now you are able to view the code; mess with it if you want.  
+  Now you should be able to view the code; mess with it if you want.  
 
-  To install for client usage issue the following after cloning the repo
+  To install for client usage issue the following after cloning the repo  
     cd dotlink
     pip install .
 
-  You should now be able to use dotlink. Run
+  You should now be able to use dotlink. Run  
     dotlink --help
-
   to ensure that dotlink was installed properly.
 
   From there, happy configuring!
