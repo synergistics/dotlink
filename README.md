@@ -28,11 +28,9 @@
     dotlink <command> --help  
 
 ### Commands 
-  init : Initialize a dotlink directory   
-  link : Link a file in the dotlink directory to a location on the filesystem   
-  rmlink : Remove the link of a file in the dotlink directory   
-  migrate : Move a file not managed with dotlink to the dotlink directory  
-  show : List the current dotlinks on the filesystem   
-  sync : Synchronize the filesystem with links specified in dotlinks.json   
-
- 
+    init : Initialize a dotlink directory   
+    link : Link a file in the dotlink directory to a location on the filesystem   
+    rmlink : Remove the link of a file in the dotlink directory   
+    migrate : Move a file not managed with dotlink to the dotlink directory  
+    show : List the current dotlinks on the filesystem   
+    sync : Synchronize the filesystem with links specified in dotlinks.json   
