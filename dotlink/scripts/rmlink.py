@@ -5,6 +5,8 @@ from dotlink.lib.dotlinkgetters import get_dotlink_dir
 from dotlink.lib.pathmodifiers import to_generic_home_path, to_specific_path
 
 def rmlink(command_relevants):
+    """Remove the link of a file in the dotlink directory"""
+
     link_name = to_specific_path(command_relevants["<link_name>"])
     dotlink_dir = get_dotlink_dir()
 
@@ -12,6 +14,7 @@ def rmlink(command_relevants):
         dotlinks = json.load(f)
         new_dotlinks = dotlinks.copy()
 
+    # Only remove the dotlink in dotlinks.json and the link file if possible, otherwise just remove the record
     if to_generic_home_path(link_name) in map(lambda x: x["link_name"], dotlinks.values()):
         if os.path.exists(link_name):
             try:

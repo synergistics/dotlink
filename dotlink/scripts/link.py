@@ -5,7 +5,12 @@ from dotlink.lib.dotlinkgetters import get_dotlink_dir
 from dotlink.lib.pathmodifiers import to_generic_home_path, to_specific_path
 
 def link(command_relevants):
+    """Link a file in the dotlink directory to a location on the filesystem""" 
+
+    # File in dotlink dir
     target = command_relevants["<target>"]
+
+    # File to link to
     link_name = to_specific_path(command_relevants["<link_name>"])
 
     symbolic = command_relevants["-s"] 
@@ -16,11 +21,13 @@ def link(command_relevants):
     with open(os.path.join(dotlink_dir, "dotlinks.json"), "r") as f:
         dotlinks = json.load(f) 
 
+    # Set target path relative to dotlink dir (probably the basename) in dotlink dir
     dotlinks[os.path.relpath(target_path, start=dotlink_dir)] = {
             "link_name": to_generic_home_path(link_name), 
             "symbolic": symbolic
         }
 
+    # Will not symlink if path does not exist (does not conform to ln commmand)
     if symbolic:
         if not os.path.exists(target_path):
             print("dotlink:", target_path, ": No such file or directory")

@@ -1,7 +1,7 @@
 dotlink migrate.
 
 Description:
-    Move a file not managed with dotlink to the dotlink 
+    Move a file not managed with dotlink to the dotlink directory
 
     Steps: 
         - Move the src file to dest or [dotlink_dir]/[basename_of_src] 
