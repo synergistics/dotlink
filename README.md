@@ -33,11 +33,14 @@
   Now you should be able to view the code; mess with it if you want.  
 
   To install for client usage issue the following after cloning the repo  
+
       cd dotlink
       pip install .
 
   You should now be able to use dotlink. Run  
+
       dotlink --help
+
   to ensure that dotlink was installed properly.
 
   From there, happy configuring!
