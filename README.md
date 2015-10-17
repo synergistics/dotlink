@@ -27,19 +27,21 @@
   on the PyPI, though name conflicts currently exist.
 
   To install, first run from your terminal  
-      git clone https://github.com/synergistics/dotlink
+
+    git clone https://github.com/synergistics/dotlink
+
   to download the source.  
 
   Now you should be able to view the code; mess with it if you want.  
 
   To install for client usage issue the following after cloning the repo  
 
-      cd dotlink
-      pip install .
+    cd dotlink
+    pip install .
 
   You should now be able to use dotlink. Run  
 
-      dotlink --help
+    dotlink --help
 
   to ensure that dotlink was installed properly.
 
